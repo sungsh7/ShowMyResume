@@ -20,6 +20,7 @@
 }
 
 body {
+    
     background-color: #222;
     color: whitesmoke;
     font-family:'DungGeunMo';
@@ -32,13 +33,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
 
 #title {
     width: 100vw;
     height: 100vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     font-size: 4rem;
     display: flex;
     flex-direction: column;
@@ -83,11 +85,14 @@ body {
 #careerBox {
     width: 100vw;
     height: 100vh;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    opacity: 0;
+    transition: 2s;
 }
 
 #workBox {
@@ -95,6 +100,7 @@ body {
     height: 100vh;
     border: 1px solid white;
     display: flex;
+    
 }
 
 #Aclown {
@@ -104,6 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   transition: 3s;
 }
 
 #workImg {
@@ -133,6 +140,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 3s;
 }
 
 #workImg2 {
@@ -144,12 +152,11 @@ body {
 #workImg2 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 #catSelterTextBox{
     width: 20vw;
-    display: flex;
-    text-align: left;
+    text-align: center;
 }
 
 #connectBox {
@@ -164,19 +171,26 @@ body {
     width: 10vw;
     height: 10vh;
     margin-left: 5vw;  
-    position: relative;  
+    position: relative;
+   transition: 2s;
+
+     
 }
 #insta{
     width: 10vw;
     height: 10vh;
     margin-left: 5vw;    
-    position: relative;  
+    position: relative;
+   transition: 3s;
+
 
 }#gitHub{
     width: 10vw;
     height: 10vh;
     margin-left: 5vw; 
     position: relative;  
+   transition: 4s;
+
 
 }
 #planet{
