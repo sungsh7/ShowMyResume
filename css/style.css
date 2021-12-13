@@ -1,7 +1,14 @@
 @font-face {
     font-family:'DungGeunMo';
-    src: url(../font/DungGeunMo.ttf);
+    src: url(../font/DungGeunMo.ttf) format('truetype');
 }
+/* 폰트  */
+@keyframes blink-effect {
+    50% {
+      opacity: 0;
+    }
+  }
+/* 키프레임 타이틀 번쩍거리는 이펙트 */
 
 
 * {
@@ -42,7 +49,8 @@ body {
 #titleText {
     color: green;
     text-shadow: 1px 1px 4px rgb(252, 29, 29), 0 0 0.5em rgb(110, 107, 58);
-    
+    animation: blink-effect 1.3s step-end infinite;
+    transition: 1s;
 }
 
 #titleBtnBox {
@@ -152,8 +160,29 @@ body {
     justify-content: center;
     align-items: center;
 }
-#connectBox div{
+#kakao{
     width: 10vw;
     height: 10vh;
-    margin-left: 5vw;
+    margin-left: 5vw;  
+    position: relative;  
+}
+#insta{
+    width: 10vw;
+    height: 10vh;
+    margin-left: 5vw;    
+    position: relative;  
+
+}#gitHub{
+    width: 10vw;
+    height: 10vh;
+    margin-left: 5vw; 
+    position: relative;  
+
+}
+#planet{
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    background-color: lightgreen;
+    top: 360vh;
 }
