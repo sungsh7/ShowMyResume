@@ -1,13 +1,15 @@
 @font-face {
-    font-family:'DungGeunMo';
+    font-family: 'DungGeunMo';
     src: url(../font/DungGeunMo.ttf) format('truetype');
 }
+
 /* 폰트  */
 @keyframes blink-effect {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+
 /* 키프레임 타이틀 번쩍거리는 이펙트 */
 
 
@@ -20,10 +22,10 @@
 }
 
 body {
-    
+
     background-color: #222;
     color: whitesmoke;
-    font-family:'DungGeunMo';
+    font-family: 'DungGeunMo';
 }
 
 #container {
@@ -68,13 +70,14 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
     color: #999999;
-    font-family:'DungGeunMo' ;
+    font-family: 'DungGeunMo';
 }
 
 
 #titleBtnBox button:hover {
     color: whitesmoke;
 }
+
 #contents {
     width: 100vw;
     height: 300vh;
@@ -99,7 +102,7 @@ body {
     height: 100vh;
     /* border: 1px solid white; */
     display: flex;
-    
+
 }
 
 #Aclown {
@@ -109,7 +112,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   transition: 3s;
+    transition: 3s;
 }
 
 #workImg {
@@ -153,7 +156,8 @@ body {
     height: 100%;
     object-fit: contain;
 }
-#catSelterTextBox{
+
+#catSelterTextBox {
     width: 20vw;
     text-align: center;
 }
@@ -167,33 +171,32 @@ body {
     align-items: center;
     overflow: hidden;
 }
-#kakao{
-    width: 10vw;
-    height: 10vh;
-    margin-left: 5vw;  
-    position: relative;
-   transition: 1.5s;
 
-     
-}
-#insta{
+#kakao {
     width: 10vw;
     height: 10vh;
-    margin-left: 5vw;    
+    margin-left: 5vw;
+    position: relative;
+    transition: 1.5s;
+}
+
+#insta {
+    width: 10vw;
+    height: 10vh;
+    margin-left: 5vw;
     position: relative;
     transition: 2s;
+}
 
-
-}#gitHub{
+#gitHub {
     width: 10vw;
     height: 10vh;
-    margin-left: 5vw; 
-    position: relative;  
+    margin-left: 5vw;
+    position: relative;
     transition: 2.5s;
-
-
 }
-#planet{
+
+#planet {
     width: 100vw;
     height: 40vh;
     position: absolute;
