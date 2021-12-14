@@ -198,8 +198,8 @@ body {
 
 #planet {
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     position: absolute;
     background-color: lightgreen;
-    top: 360vh;
+    top: 370vh;
 }
