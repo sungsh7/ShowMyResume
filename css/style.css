@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 2.5s;
+    transition: 3s;
 }
 
 #workImg2 {
@@ -172,7 +172,7 @@ body {
     height: 10vh;
     margin-left: 5vw;  
     position: relative;
-   transition: 2.5s;
+   transition: 1.5s;
 
      
 }
@@ -181,7 +181,7 @@ body {
     height: 10vh;
     margin-left: 5vw;    
     position: relative;
-    transition: 3s;
+    transition: 2s;
 
 
 }#gitHub{
@@ -189,7 +189,7 @@ body {
     height: 10vh;
     margin-left: 5vw; 
     position: relative;  
-    transition: 4s;
+    transition: 2.5s;
 
 
 }

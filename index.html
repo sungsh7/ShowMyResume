@@ -114,7 +114,7 @@
 
 
     window.addEventListener('scroll', () => {
-        // console.log(scrollY);
+        console.log(scrollY);
         // console.log(scrollX);
         if (window.scrollY > 0) {
             careerBox.style.opacity = '0';
@@ -136,7 +136,7 @@
             Aclown.style.marginTop = '0';
             Aclown.style.opacity = '1';
         }
-        if (window.scrollY > 1700) {
+        if (window.scrollY > 1500) {
             catShelter.style.opacity = '1';
             catShelter.style.marginTop = '50vh';
         }
@@ -165,10 +165,10 @@
     const $career = document.querySelector('#careerBtn');
     const $work = document.querySelector('#workBtn');
     const $connect = document.querySelector('#connectBtn');
-    console.log($start);
-    console.log($career);
-    console.log($work);
-    console.log($connect);
+    // console.log($start);
+    // console.log($career);
+    // console.log($work);
+    // console.log($connect);
 
 //버튼을 클릭하면 해당 스크롤값으로 이동한다
 
@@ -179,11 +179,20 @@
             window.scrollTo(0,1100);
         });
         $work.addEventListener('click',()=>{
-            window.scrollTo(0,2000);
+            window.scrollTo(0,1850);
         });
         $connect.addEventListener('click',()=>{
             window.scrollTo(0,2900);
         });
+
+
+
+        //스페이스 인베이더 친구가 화면 여기저기에 나타났다가 사라진다
+        //별도 나타났다가 사라진다 
+        //위의 과정이 스크롤 처음부터 끝까지 반복 된다 
+        //화면 여기저기 좌표를 배열로 받는다 
+        //작은 이미지 들이 나왔다 사라진다 or 이미지자체가 생성되었다가 없어진다
+        
 
 </script>
 
