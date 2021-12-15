@@ -1,0 +1,13 @@
+/* 클래스 */
+
+.spaceInvader {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../img/bg/space_invaders_icon_136180.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: 5s;
+}
