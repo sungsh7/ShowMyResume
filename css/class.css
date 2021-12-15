@@ -9,5 +9,6 @@
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    transition: 5s;
+    transition: 1s;
+    
 }

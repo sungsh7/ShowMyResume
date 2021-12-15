@@ -80,12 +80,12 @@
 
             <div id="connectBox">
 
-                <div id="kakao"><a style="color: whitesmoke;" href="https://open.kakao.com/o/s9NbbOOd"> 
-                    <i class="xi-kakaotalk xi-5x"></i></a></div>
+                <div id="kakao"><a style="color: whitesmoke;" href="https://open.kakao.com/o/s9NbbOOd">
+                        <i class="xi-kakaotalk xi-5x"></i></a></div>
                 <div id="insta"><a style="color: whitesmoke;" href="https://www.instagram.com/sunghyun_muria/">
-                    <i class="xi-instagram xi-5x"></i></a></div>
+                        <i class="xi-instagram xi-5x"></i></a></div>
                 <div id="gitHub"><a style="color: whitesmoke;" href="https://github.com/sungsh7">
-                    <i class="xi-github xi-5x"></i></a></div>
+                        <i class="xi-github xi-5x"></i></a></div>
 
 
 
@@ -196,13 +196,13 @@
 
 
     const container = document.querySelector('#container');
-    console.log(container); 
-        // 윈도우 로드시 이벤트를 넣어준다
-    window.addEventListener('load',()=>{
+    console.log(container);
+    // 윈도우 로드시 이벤트를 넣어준다
+    window.addEventListener('load', () => {
         //플러스라는 콜백함수를 만들어 준다
-        function plus (){
+        function plus() {
             // 생성되는 갯수는 10개정도 만들어 놓는다
-            for(let i = 0; i < 10; i++){
+            for (let i = 0; i < 10; i++) {
                 const invader = document.createElement('div');
                 // div가 생성되게 한다
                 // console.log (invader);
@@ -213,25 +213,48 @@
             }
         }
         setTimeout(() => {
-        plus();
-    }, 300);//10초짜리 타이머를 만들어준다
+            plus();
+        }, 1000); //1초짜리 타이머를 만들어준다
     });
-    window.addEventListener('wheel',()=>{
+    window.addEventListener('wheel', () => {
         const scroll_Y = window.scrollY;
-        if(scroll_Y >= 0 ){
+        if (scroll_Y >= 0) {
             const $invader = document.querySelectorAll('.spaceInvader');
-            console.log($invader);
+            // 랜덤 함수를 만든다 
+            function random() {
+                for (let i = 0; i < $invader.length; i++) {
+                    let $width = Math.floor(Math.random() * 1000);
+                    console.log($invader[i]);
+                    let $height = Math.floor(Math.random() * 2000);
+                    let $sizeW = Math.floor(Math.random() * 40);
+                    let $sizeH = Math.floor(Math.random() * 40);
+                    let $opacity = Math.floor(Math.random() * 1);
 
-            function random () {
-                for(let i = 0; i < $invader.length; i ++){
+                    //인베이드 배열에 만든 랜덤 함수값을 대입 해본다 
+                    
+                    $invader[i].style.top = $width +'px';
+                    // $invader[i].style.bottom = $height +'px';
+                    $invader[i].style.left = $height + 'px';
+                    // $invader[i].style.right = $width + 'px';
+                    $invader[i].style.width = $sizeW + 'px';
+                    $invader[i].style.height = $sizeH + 'px';
+                    $invader[i].style.opacity = $opacity -'0.2'+'px';   
+                }   
+            } 
+            invaderMove();
+            function startInvaderMove(){
+                invaderMove();
+            };
+            console.log(random);
+            console.log(invaderMove);
 
-                };
-
-            }
+            function invaderMove() {
+                setInterval(()=>{
+                    random()
+                },800);
+            };
         }
     });
-
-
 </script>
 
 </html>
