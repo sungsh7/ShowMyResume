@@ -3,12 +3,16 @@
 .spaceInvader {
     width: 30px;
     height: 30px;
+    min-width: 5px;
+    min-height: 5px;
     position: absolute;
     background-image: url(../img/bg/space_invaders_icon_136180.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    transition: 1s;
-    
+    transition: 100;
+    opacity: 0.7;
 }
+
+
