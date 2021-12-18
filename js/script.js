@@ -70,6 +70,8 @@ const careerBox = document.querySelector('#careerBox');
     const $career = document.querySelector('#careerBtn');
     const $work = document.querySelector('#workBtn');
     const $connect = document.querySelector('#connectBtn');
+    const $workLink = document.querySelector('#workImg2');
+    // console.log($workLink);
    
     // console.log($start);
     // console.log($career);
@@ -77,7 +79,7 @@ const careerBox = document.querySelector('#careerBox');
     // console.log($connect);
 
     //버튼을 클릭하면 해당 스크롤값으로 이동한다
-    
+    // 작업물 링크도걸어준다
     $start.addEventListener('click', () => {
         window.scrollTo(0, 0);
     });
@@ -89,6 +91,9 @@ const careerBox = document.querySelector('#careerBox');
     });
     $connect.addEventListener('click', () => {
         window.scrollTo(0, 2900);
+    });
+    $workLink.addEventListener('click', ()=>{
+        window.open("https://sungsh7.github.io/Portfolio/portfolio/index.html");
     });
     
 
