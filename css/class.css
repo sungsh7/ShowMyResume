@@ -16,6 +16,6 @@
 }
 
 .infinite_rotating_logo{
-    animation: rotate_image 30s linear infinite;
-    transform-origin: 50% 50%;
+    animation: rotate_image 50s linear infinite;
+    transform-origin: center;
 }
