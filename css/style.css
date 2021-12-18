@@ -89,6 +89,7 @@ body {
     margin-top: 10px;
     color: #999999;
     font-family: 'DungGeunMo';
+    z-index: 2;
 }
 
 
@@ -198,7 +199,7 @@ body {
     height: 10vh;
     margin-left: 5vw;
     position: relative;
-    transition: 1.5s;
+    transition: 1.8s;
 }
 
 #insta {
