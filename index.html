@@ -90,7 +90,7 @@
 
 
 
-                <div id="planet"></div>
+                <div id="planet"><img src="./img/planet/pngwing.com.png" alt="planet" class="infinite_rotating_logo"></div>
             </div>
         </div>
 
@@ -108,9 +108,11 @@
     const kakao = document.querySelector('#kakao');
     const insta = document.querySelector('#insta');
     const github = document.querySelector('#gitHub');
+    const planet = document.querySelector('#planet');
     console.log(careerBox);
     console.log(workBox);
     console.log(connectBox);
+    console.log(planet);
     //각 요소들이  일정 scrollY 값 이상일때 생겼다가 일정 scrollY 값이상이면 없어진다.
 
 
@@ -126,6 +128,7 @@
             kakao.style.marginTop = '390vh';
             insta.style.marginTop = '390vh';
             github.style.marginTop = '390vh';
+            planet.style.top = '400vh';
         }
         if (window.scrollY > 400) {
             careerBox.style.opacity = '1';
@@ -154,6 +157,7 @@
             kakao.style.marginTop = '0';
             insta.style.marginTop = '0';
             github.style.marginTop = '0';
+            planet.style.top = '360vh';
         }
 
     });
@@ -167,13 +171,14 @@
     const $career = document.querySelector('#careerBtn');
     const $work = document.querySelector('#workBtn');
     const $connect = document.querySelector('#connectBtn');
+   
     // console.log($start);
     // console.log($career);
     // console.log($work);
     // console.log($connect);
 
     //버튼을 클릭하면 해당 스크롤값으로 이동한다
-
+    
     $start.addEventListener('click', () => {
         window.scrollTo(0, 0);
     });
@@ -186,7 +191,7 @@
     $connect.addEventListener('click', () => {
         window.scrollTo(0, 2900);
     });
-
+    
 
 
     // //스페이스 인베이더 친구가 화면 여기저기에 나타났다가 사라진다
@@ -252,7 +257,7 @@
             function invaderMove() {
                 setInterval(() => {
                     random();
-                }, 5000);
+                }, 3000);
             };
         }
     });

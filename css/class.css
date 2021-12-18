@@ -15,4 +15,7 @@
     opacity: 0.7;
 }
 
-
+.infinite_rotating_logo{
+    animation: rotate_image 30s linear infinite;
+    transform-origin: 50% 50%;
+}
