@@ -142,7 +142,7 @@ const careerBox = document.querySelector('#careerBox');
                     let $opacity = Math.floor(Math.random() * 1);
                     let $value = $sizeW * .4;
                     //인베이드 배열에 만든 랜덤 함수값을 대입 해본다 
-                    console.log($value);
+                    // console.log($value);
                     // console.log($width);
                     $invader[i].style.top = $width + 'vh';
                     $invader[i].style.left = $height + 'px';

@@ -13,7 +13,7 @@
     // let container = document.querySelector('#container');
     let canvas = document.querySelector('#pixie');
     let context = canvas.getContext('2d');
-    console.log(context);
+    // console.log(context);
     let gradient = null;
     let pixies = new Array();
 
@@ -29,9 +29,9 @@
     }
     setDimensions();
     window.addEventListener('resize', setDimensions);
-    console.log(container);
-    console.log(canvas.width);
-    console.log(canvas.height);
+    // console.log(container);
+    // console.log(canvas.width);
+    // console.log(canvas.height);
 
 
     function Circle() {
@@ -64,7 +64,7 @@
             this.settings.ydrift *= Math.random() * (Math.random() < .5 ? -1 : 1);
 
         }
-        console.log(this.x);
+   
         this.fade = function () {
             this.rt += this.settings.rt;
         }
