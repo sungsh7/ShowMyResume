@@ -157,7 +157,7 @@ const careerBox = document.querySelector('#careerBox');
             };
             // console.log(random);
             // console.log(invaderMove);
-
+            
             function invaderMove() {
                 setInterval(() => {
                     random();

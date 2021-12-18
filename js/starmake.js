@@ -1,8 +1,8 @@
-  //  const selector = document.querySelector('#selector'); //document 앞에 window. < 생략한것이다 원랜 써야됨
+  //  const selector = document.querySelector('#container'); //document 앞에 window. < 생략한것이다 원랜 써야됨
 
     //  selector.addEventListener('click',()=>{
 
-    //      console.log(this); // 선언방식으로 찍으면 this = selector 가 찍힌다 function 으로 찍을경우
+    //      console.log(this); // 선언방식(function (){})으로 찍으면 this = container 가 찍힌다 
     //     });                 //()=>{} 화살표 방식으로 콜백함수 찍으면 부모 윈도우 전체가 찍힌다.
     //                         //this 는 상위 스코프가 된다.
     //                         //this가 보이면 다 짤라내고 this가 뭘 가르치는지 확인해본다.
@@ -10,7 +10,6 @@
     let $height = 400 + 'vh';
     let $MaxParticles = 100;
     let $DrawInterval = 60;
-    // let container = document.querySelector('#container');
     let canvas = document.querySelector('#pixie');
     let context = canvas.getContext('2d');
     // console.log(context);
@@ -64,7 +63,7 @@
             this.settings.ydrift *= Math.random() * (Math.random() < .5 ? -1 : 1);
 
         }
-   
+        // console.log(this.x);
         this.fade = function () {
             this.rt += this.settings.rt;
         }
