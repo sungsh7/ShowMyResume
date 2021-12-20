@@ -200,7 +200,7 @@ body {
     margin-left: 5vw;
     position: relative;
     transition: 1.8s;
-    z-index: 4;
+    
 }
 
 #insta {
@@ -209,7 +209,7 @@ body {
     margin-left: 5vw;
     position: relative;
     transition: 2.5s;
-    z-index: 4;
+   
 }
 
 #gitHub {
@@ -218,7 +218,7 @@ body {
     margin-left: 5vw;
     position: relative;
     transition: 3.5s;
-    z-index: 4;
+    
 }
 
 #planet {
@@ -227,6 +227,7 @@ body {
     position: absolute;
     top: 360vh;
     transition: 1s;
+    background: none;
 }
 
 #planet img {
@@ -235,4 +236,6 @@ body {
     margin: 0 auto;
     opacity: 1;
     object-fit: contain;
+    background: none;
+    
 }
