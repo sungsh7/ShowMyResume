@@ -71,7 +71,7 @@ body {
 #titleText {
     color: green;
     text-shadow: 1px 1px 4px rgb(252, 29, 29), 0 0 0.5em rgb(110, 107, 58);
-    animation: blink-effect 1.3s step-end infinite;
+    animation: blink-effect 1.5s step-end infinite;
     transition: 2s;
 }
 
