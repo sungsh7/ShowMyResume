@@ -15,7 +15,7 @@ const careerBox = document.querySelector('#careerBox');
 
 
     window.addEventListener('scroll', () => {
-        // console.log(scrollY);
+        console.log(scrollY);
         // console.log(scrollX);
         if (window.scrollY > 0) {
             careerBox.style.opacity = '0';
