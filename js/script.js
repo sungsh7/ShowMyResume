@@ -52,7 +52,7 @@ const careerBox = document.querySelector('#careerBox');
             catShelter.style.marginTop = '-50vh';
             planet.style.top = '360vh';
         }
-        if (window.scrollY > 2600) {
+        if (window.scrollY > 2630) {
             kakao.style.marginTop = '0';
             insta.style.marginTop = '0';
             github.style.marginTop = '0';
@@ -87,7 +87,7 @@ const careerBox = document.querySelector('#careerBox');
         window.scrollTo(0, 1100);
     });
     $work.addEventListener('click', () => {
-        window.scrollTo(0, 1850);
+        window.scrollTo(0, 1890);
     });
     $connect.addEventListener('click', () => {
         window.scrollTo(0, 2900);
